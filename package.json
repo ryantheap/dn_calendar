@@ -1,0 +1,23 @@
+{
+  "name": "dn-calendar",
+  "version": "0.1.15",
+  "main": "lib/Calendar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run build && npm version patch && npm pack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-react": "^7.24.7"
+  },
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
